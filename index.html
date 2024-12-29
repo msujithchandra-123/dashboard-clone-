@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patient Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Main Dashboard -->
+  <div class="dashboard">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h1>Tech.Care</h1>
+      <ul>
+        <li>Overview</li>
+        <li class="active">Patients</li>
+        <li>Schedule</li>
+        <li>Message</li>
+        <li>Transactions</li>
+      </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <!-- Top Navigation -->
+      <div class="top-nav">
+        <h2>Patients</h2>
+        <div class="profile">
+          <span>Dr. Jose Simmons</span>
+          <img src="senior-woman-doctor-and-portrait-smile-for-health-2023-11-27-05-18-16-utc.png" alt="Profile">
+        </div>
+      </div>
+
+      <!-- Content Section -->
+      <div class="content">
+        <!-- Left Panel -->
+        <div class="left-panel">
+          <h3>Patients</h3>
+          <ul>
+            <li>Emily Williams</li>
+            <li>Ryan Johnson</li>
+            <li>Brandon Mitchell</li>
+            <li class="active">Jessica Taylor</li>
+            <li>William Harris</li>
+           <li>Ava Clark</li>
+    <li>Ethan Lewis</li>
+    <li>Mia Walker</li>
+    <li>Benjamin Young</li>
+    <li>Charlotte King</li>
+    <li>Alexander Scott</li>
+    <li>Grace Adams</li>
+          </ul>
+        </div>
+
+        <!-- Center Panel -->
+        <div class="center-panel">
+          <h3 class="diagnosis-heading">Diagnosis History</h3>
+          
+          <!-- Blood Pressure Chart -->
+          <div class="chart-container">
+            <canvas id="bloodPressureChart"></canvas>
+          </div>
+          
+          <!-- Statistics Section -->
+          <div class="stats">
+            <div class="stat-card">
+              <img src="respiratory rate.png" alt="Jessica Taylor">
+              <div>
+                <h4>Respiratory Rate</h4>
+                <p><strong>20 bpm</strong></p>
+                <p class="status normal">Normal</p>
+              </div>
+            </div>
+        
+            <div class="stat-card">
+              <img src="temperature.png" alt="Jessica Taylor">
+              <div>
+                <h4>Temperature</h4>
+                <p><strong>98.6°F</strong></p>
+                <p class="status normal">Normal</p>
+              </div>
+            </div>
+        
+            <div class="stat-card">
+              <img src="HeartBPM.png" alt="Jessica Taylor">
+              <div>
+                <h4>Heart Rate</h4>
+                <p><strong>78 bpm</strong></p>
+                <p class="status low">Lower than Average</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+
+        <!-- Right Panel -->
+        <div class="right-panel">
+          <img src="Layer 2.png" alt="Jessica Taylor">
+          <h3>Jessica Taylor</h3>
+          <p>Date of Birth: August 23, 1996</p>
+          <p>Gender: Female</p>
+          <p>Contact Info: (415) 555-1234</p>
+          <p>Emergency Contacts: (415) 555-5678</p>
+          <p>Insurance Provider: Sunrise Health Assurance</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

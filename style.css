@@ -1,0 +1,344 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Dashboard Styling */
+.dashboard {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 20%;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.sidebar h1 {
+  color: #007bff;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.sidebar ul li.active {
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+}
+
+/* Main Content */
+.main-content {
+  width: 80%;
+  padding: 20px;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-nav h2 {
+  margin: 0;
+}
+
+.top-nav .profile {
+  display: flex;
+  align-items: center;
+}
+
+.top-nav .profile img {
+  margin-left: 10px;
+  border-radius: 50%;
+}
+
+/* Content Panels */
+.content {
+  display: flex;
+}
+
+.left-panel {
+  width: 25%;
+}
+
+.center-panel {
+  width: 50%;
+}
+
+.right-panel {
+  width: 25%;
+}
+
+.right-panel img {
+  width: 100px;
+  border-radius: 50%;
+}
+
+/* Chat Container */
+.chat-container {
+  width: 300px; /* Reduced width */
+  height: 400px; /* Reduced height */
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border: 1px solid #e3e3e3;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+/* Chat Container */
+.chat-container {
+  width: 250px; /* Reduced width */
+  height: 350px; /* Reduced height */
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border: 1px solid #e3e3e3;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+/* Chat Header */
+.chat-header {
+  background-color: #4caf50;
+  color: #fff;
+  font-size: 0.9rem; /* Reduced font size */
+  font-weight: bold;
+  padding: 8px;
+  text-align: center;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+/* Chat Body */
+.chat-body {
+  flex: 1;
+  padding: 8px;
+  overflow-y: auto;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  gap: 5px; /* Reduced gap */
+}
+
+/* Chat Footer */
+.chat-footer {
+  display: flex;
+  align-items: center;
+  padding: 6px;
+  border-top: 1px solid #d3d3d3;
+  background-color: #ffffff;
+}
+
+#chat-input {
+  flex: 1;
+  padding: 6px;
+  font-size: 0.85rem; /* Smaller font size */
+  border: 1px solid #d3d3d3;
+  border-radius: 5px;
+  outline: none;
+  margin-right: 6px; /* Reduced space */
+}
+
+#chat-send-btn {
+  padding: 6px 10px; /* Reduced padding */
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.85rem; /* Smaller font size */
+}
+
+#chat-send-btn:hover {
+  background-color: #45a049;
+}
+
+/* Chat Bubbles */
+.chat-message {
+  max-width: 70%; /* Reduced max width */
+  padding: 6px 10px; /* Reduced padding */
+  border-radius: 12px;
+  font-size: 0.8rem; /* Smaller font size */
+  line-height: 1.3;
+}
+
+/* User Message */
+.chat-message.user {
+  align-self: flex-end;
+  background-color: #4caf50;
+  color: #fff;
+  border-bottom-right-radius: 0;
+}
+
+/* Support Message */
+.chat-message.support {
+  align-self: flex-start;
+  background-color: #e3e3e3;
+  color: #333;
+  border-bottom-left-radius: 0;
+}
+
+/* Scrollbar Styling */
+.chat-body::-webkit-scrollbar {
+  width: 5px; /* Even thinner scrollbar */
+}
+
+.chat-body::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}
+
+.chat-body::-webkit-scrollbar-thumb:hover {
+  background-color: #aaa;
+}
+
+
+/* Stats Section Styling */
+.stats {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Individual Stat Card */
+.stat-card {
+  flex: 1;
+  background: #ffffff;
+  border: 1px solid #e3e3e3;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Icons */
+.icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Icon Types */
+.respiratory-icon {
+  background-color: #d1f0e3;
+  background-image: url('path/to/respiratory-icon.svg'); /* Replace with an appropriate icon */
+}
+
+.temperature-icon {
+  background-color: #ffe5e0;
+  background-image: url('path/to/temperature-icon.svg'); /* Replace with an appropriate icon */
+}
+
+.heart-icon {
+  background-color: #ffd1d1;
+  background-image: url('path/to/heart-icon.svg'); /* Replace with an appropriate icon */
+}
+
+/* Stat Content */
+.stat-card h4 {
+  font-size: 1.2rem;
+  margin: 0;
+  color: #333;
+}
+
+.stat-card p {
+  margin: 5px 0;
+}
+
+.stat-card p strong {
+  font-size: 1.1rem;
+  color: #000;
+}
+
+/* Status Labels */
+.status {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.status.normal {
+  color: #2ecc71;
+}
+
+.status.low {
+  color: #e74c3c;
+}
+/* Left Panel */
+.left-panel {
+  width: 250px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.left-panel h3 {
+  font-size: 1.25rem;
+  color: #4caf50;
+  margin-bottom: 15px;
+}
+
+.left-panel ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.left-panel ul li {
+  font-size: 1rem;
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.left-panel ul li:hover {
+  background-color: #f1f1f1;
+}
+
+.left-panel ul li.active {
+  background-color: #4caf50;
+  color: white;
+}
+
+.left-panel ul li:not(.active):hover {
+  background-color: #e3f2e1;
+}
